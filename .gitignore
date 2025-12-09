@@ -5,20 +5,15 @@ venv*/
 env/
 ENV/
 
-# Large model files (GitHub 100MB limit)
-sentiment_model/checkpoint-*/model.safetensors
-sentiment_model/checkpoint-*/optimizer.pt
-sentiment_model/checkpoint-*/scheduler.pt
-sentiment_model/checkpoint-*/rng_state.pth
-sentiment_model/checkpoint-*/trainer_state.json
-
-# Training artifacts
+# Large model files and entire sentiment model directory (GitHub 100MB limit)
+sentiment_model/
+*.safetensors
 *.pt
 *.bin
 checkpoint-*/
 training_args.bin
 
-# Python cache
+# Training artifacts
 __pycache__/
 *.pyc
 *.pyo
