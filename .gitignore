@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+venv*/
+.venv/
+env/
+ENV/
+
+# Large model files (GitHub 100MB limit)
+sentiment_model/checkpoint-*/model.safetensors
+sentiment_model/checkpoint-*/optimizer.pt
+sentiment_model/checkpoint-*/scheduler.pt
+sentiment_model/checkpoint-*/rng_state.pth
+sentiment_model/checkpoint-*/trainer_state.json
+
+# Training artifacts
+*.pt
+*.bin
+checkpoint-*/
+training_args.bin
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
