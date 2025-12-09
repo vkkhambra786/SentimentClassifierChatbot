@@ -1,0 +1,11 @@
+# requirements.txt
+torch>=1.13.0
+transformers>=4.30.0
+datasets
+scikit-learn
+sentencepiece
+streamlit
+accelerate
+numpy
+pandas
+tqdm
